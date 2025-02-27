@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BO6 Box Addict Tracker Project</title>
+    <link rel="stylesheet" href="project.css">
+  </head>
+  <header>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Projects.html">Projects</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+    </ul>
+</header>
+  <body style="background-color: #02c9e7;">
+    <main>
+      <center>
+        <h1 >Welcome to the Black Ops 6 Box Addict Calling Card Tracker</h1> 
+        <h2>A project made by FzR dontdie x to track the Box Addict calling card</h2> 
+        <H3>Citadelle des Morts has the shortest box list and all weapons are available from the start and is recommended for this challenge.</H3>
+      </center>
+        <h2>Select Map below</h2>
+        <div class="tab">
+          <button class="tablinks" onclick="openMap(event, 'Liberty Falls')">Liberty Falls</button>
+          <button class="tablinks" onclick="openMap(event, 'Terminus')">Terminus</button>
+          <button class="tablinks" onclick="openMap(event, 'Citadelle des Morts')">Citadelle des Morts</button>
+        </div>
+        <div id="Liberty Falls" class="tabcontent" style="background-color: #fff;">
+          <h3>Liberty Falls</h3>
+          <p>Liberty Falls is the first zombies map.</p>
+          <p>Please Note: In Directed Mode you must first build the Jet Gun and swap it for another weapon and let it despawn before it will appear in the box. The exception is by using a wonderbar gobblegum.</p>
+          <progress max="100" value="0" id="LFbar"></progress>
+          <ul id="LFList"></ul>
+        </div>
+        
+        <div id="Terminus" class="tabcontent" style="background-color: #fff;">
+          <h3>Terminus</h3>
+          <p>Terminus is the second zombies map.</p>
+          <p>Please Note: In Directed Mode you must first build the Beam Smasher and swap it for another weapon and let it despawn before it will appear in the box. The exception is by using a wonderbar gobblegum.</p>
+          <progress max="100" value="0" id="Tbar"></progress>
+          <ul id="TList"></ul>
+        </div>
+
+        <div id="Citadelle des Morts" class="tabcontent" style="background-color: #fff;">
+          <h3>Citadelle des Morts</h3>
+          <p>Citadelle des Morts is the third zombies map.</p>
+          <p>Please Note: Citadelle des Morts in Directed Mode has all weapons available from the beginning of the game and has the shortest box list.</p>
+          <progress max="100" value="0" id="CdMbar"></progress>
+          <ul id="CdMList"></ul>
+        </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
