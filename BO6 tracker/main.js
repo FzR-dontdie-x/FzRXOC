@@ -96,3 +96,18 @@ function updateProgressBar(string, progressBarId) {
   //let progressBar = document.getElementById(progressBarId);
   let totalItems = String.length;
   let completedItems = 0;
+
+  function processItem() {
+    if (completedItems < totalItems) {
+      // Simulate processing an item (replace with your actual logic)
+      setTimeout(() => {
+        completedItems++;
+        let progress = (completedItems / totalItems) * 100;
+        document.getElementById(progressBarId).value = progress;
+        processItem(); // Process the next item
+      });
+    }
+  }
+
+  processItem(); // Start processing the first item
+}
