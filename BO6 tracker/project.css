@@ -1,46 +1,10 @@
+@import url("../website.css");
+
 .item-description {
     padding: 5px;
     width: 200px;
     margin-bottom: 10px;
 }
-
-
-progress {
-    width: 40%;
-    display: block; /* default: inline-block */
-    margin: 2em auto;
-    padding: 3px;
-    border: 0 none;
-    background: #444;
-    border-radius: 14px;
-  }
-  progress::-moz-progress-bar {
-    border-radius: 12px;
-    background: #00ff00;
-  
-  }
-/* Style the tab */
-.tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-  }
-  
-  /* Style the buttons that are used to open the tab content */
-  .tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-  }
-  
-  /* Change background color of buttons on hover */
-  .tab button:hover {
-    background-color: #ddd;
-  }
   
   /* Create an active/current tablink class */
   .tab button.active {
