@@ -6,6 +6,7 @@
   --secondary-text: #232738;
   --primary-color: #3a435d;
   --accent-color: #0071ff;
+  --topnav-color: #7a7a7a;
 }
 .darkmode{
   --alt-text-color: #f00;
@@ -15,11 +16,12 @@
   --secondary-text: #a4a5b8;
   --primary-color: #3a435d;
   --accent-color: #0071ff;
+  --topnav-color: #333;
 }
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #333;
+  background-color: var(--topnav-color);
   overflow: hidden;
 }
 
@@ -30,7 +32,7 @@
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 /* Change the color of links on hover */
@@ -85,13 +87,12 @@ button{
   height: 50px;
   width: 50px;
   padding: 0;
-  border-radius: 50%;
   background-color: var(--base-variant);
   display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
-  top: 20px;
+  top: 0px;
   right: 20px;
 }
 #theme-switch svg{
