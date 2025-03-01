@@ -93,7 +93,7 @@ button{
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
+  position: absolute;
   top: 0px;
   right: 20px;
 }
@@ -127,9 +127,10 @@ button{
   left: 50%;
 }
 
-table, th, td {
+table, tr, th, td {
   border: 1px solid var(--table-border);
   border-collapse: collapse;
+  background-color: var(--topnav-color);
 }
 th, td {
   padding: 15px;
