@@ -155,3 +155,47 @@ th, td {
 #myBtn:hover {
   background-color: var(--alt-text-color); /* Add a dark-grey background on hover */
 }
+
+#image-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.image-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.image-container img {
+  width: 200px;
+  height: 133px;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1);
+}
+
+.image-container img:hover {
+  transform: scale(1.1);
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#overlay img {
+  max-width: 90%;
+  max-height: 80%;
+  transition: all 0.3s ease-in-out;
+}
+
+#overlay.active {
+  display: flex;
+}
