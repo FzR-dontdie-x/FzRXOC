@@ -1,14 +1,4 @@
 :root{
-  --alt-text-color: #000;
-  --base-color: white;
-  --base-variant: #e8e9ed;
-  --text-color: #111528;
-  --secondary-text: #232738;
-  --primary-color: #3a435d;
-  --accent-color: #0071ff;
-  --topnav-color: #7a7a7a;
-}
-.darkmode{
   --alt-text-color: #f00;
   --base-color: #070b1d;
   --base-variant: #101425;
@@ -17,6 +7,16 @@
   --primary-color: #3a435d;
   --accent-color: #0071ff;
   --topnav-color: #333;
+}
+.darkmode{
+  --alt-text-color: #000;
+  --base-color: white;
+  --base-variant: #e8e9ed;
+  --text-color: #111528;
+  --secondary-text: #232738;
+  --primary-color: #3a435d;
+  --accent-color: #0071ff;
+  --topnav-color: #7a7a7a;
 }
 
 /* Add a black background color to the top navigation */
