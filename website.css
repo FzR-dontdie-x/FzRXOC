@@ -7,6 +7,7 @@
   --primary-color: #3a435d;
   --accent-color: #0071ff;
   --topnav-color: #333;
+  --table-border: #888;
 }
 .darkmode{
   --alt-text-color: #000;
@@ -17,6 +18,7 @@
   --primary-color: #3a435d;
   --accent-color: #0071ff;
   --topnav-color: #7a7a7a;
+  --table-border: #222; 
 }
 
 /* Add a black background color to the top navigation */
@@ -114,4 +116,21 @@ button{
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.centered-alt{
+  text-align: center;
+}
+
+.centered-alt2{
+  position: absolute;
+  left: 50%;
+}
+
+table, th, td {
+  border: 1px solid var(--table-border);
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
 }
